@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Text for extentions",
+  "description": "This extension shows my first extension(links and parsing message)",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons" : {
+    "64" : "icon.png"
+  },
+  "permissions": [
+  "activeTab"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["http://*/*", "https://*/*"],
+     "css": ["style.css"],
+     "js": ["jquery-2.1.4.min.js", "myScript.js"]
+   }
+ ],
+ "web_accessible_resources": [
+   "toolbar.html",
+   "style.css"
+ ]
+}
+
+//history, bookmark manager, newtab

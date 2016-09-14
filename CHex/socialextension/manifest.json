@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Social Testing",
+  "description": "This extension probably shows social connection",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+
+  },
+  "icons" : {
+    "16" : "icon.png",
+    "32" : "icon.png",
+    "64" : "icon.png",
+    "128" : "icon.png"
+
+  },
+  "permissions": [
+    "contextMenus"
+  ]
+
+}

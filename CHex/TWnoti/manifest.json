@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tweet Noti",
+  "description": "This extension probably shows social noti",
+  "version": "1.0",
+  "icons": {
+    "32": "icon.png",
+    "64": "icon.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+
+  "permissions": [
+    "notifications",
+    "https://twitter.com/i/notifications"
+  ]
+
+}
